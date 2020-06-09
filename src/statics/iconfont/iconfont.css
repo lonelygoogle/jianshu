@@ -1,0 +1,30 @@
+
+@font-face {
+  font-family: "iconfont";
+  src: url('./iconfont.eot?t=1591627919910'); /* IE9 */
+  src: url('./iconfont.eot?t=1591627919910#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPYAAsAAAAAB9gAAAOKAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDHAqDDIJ2ATYCJAMQCwoABCAFhG0HTxvvBsieCbaNhbUjKeSK5pt4+G+/3+8zd57NQzxJEvVOYnWTSsmQGiGSAp1voX9++k19B9TIXKhZtKJKujlJjhTi5KYqf2JCZv6n35oLDPUJEAD4P5fTW4nPb2c53tjUWIvunh/1Aoy3BrYntkECLpAAMfaGsSsv4jiBYlQSdFZW0wKhMmNcIF4kuwChKbtcow1NoV6yNEO8Q5BmWkDdBfDmfz7+gbFQkNQqMKZe3JXaoOA76utMevr/6TDcRYAezwu2igpzQCYeSv1X6DA/h1aU3owNoKkpMVZH2teZ//8jZi9S0/zLIyQVUQdD3QHWUKHiO8omCb7TSBLfM2U3iefRTRS8Ah/IMPyqWZY6Q0I0oaE9dW/SwptxpM067tAppKrjWxBr1sBuM2JYe6s5h8+fcSH92rPw7Z1ZvkML69AMGbp2ELu5T5twRrMIoAR7kV14H80wm2f4t8hpPb0fph/QLLqC0CQ+oPKq2vL0aeuzZ+bWNYsOzVACAXPMt+Z+XouqGiMro27iZFOJ0ViiS+MXR6Hi4cMimqNXhJtM4St27mrb2rNg44ULJ4/W1nw/evQ79WFnQWkpI8FFsfxRXMkj3Om/pViV8+pbqSKLlBdgfuf5ybUMHQoq1HrieanjCE11QdbnkWZyp2/P3/2if0UPAtOTd+4saOlws6aqrvwWaiitreh6M6+1sPl6xND0vbvvRMyPyGpG9ZJc70SRLCNPlPFMSpLAC/Bzir5FV/qB//TFg05W59ST3/cd/7NeNY7qnHMoBuCL8S1DsZ9TDPSj/wHdmv5ZdMuKrLKGI2eZsyktkC0lxkkoCn5RmT5vx1AGW6sJTYMxJA0jUGkaQ7NhDmra1qCu6RCKWeWr2/opaJHDgBlzAIQexyDp8gmVHvfQbHgDNUO+QV1PNBSX0X3LtokktljBAsE2zjKBk6wet2i5CBtom7B9jFNQkqxv5LHil1KcQavPlsqxGytjzPCPtRsJETlR8bi4MnAadjo9nFfxyNhKtO2EeLN0OrHsSVqrxwWsUwpMQGA2HIsJOBIrDzfRrU2wufc3wezGcBIoNbqKLQ9T+Endcwy09C3QcsndSnct5/iNZWdEECKOSOHhwikDXsxp5j043vJBMsyK0GrvkfXKokPVxLaSdn7F9YTroDD65aAQjRgUBO1z38aPid5gSqcKhW6i4LbbBFly+4xqHyNYBLcBAAAA') format('woff2'),
+  url('./iconfont.woff?t=1591627919910') format('woff'),
+  url('./iconfont.ttf?t=1591627919910') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('./iconfont.svg?t=1591627919910#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* .iconiconset0137:before {
+  content: "\e624";
+}
+
+.iconAa:before {
+  content: "\e636";
+}
+
+.iconfangdajing_huaban1:before {
+  content: "\e682";
+} */
