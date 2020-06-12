@@ -1,11 +1,16 @@
-import React, { Component } from 'react'
-import { HomeWrapper, HomeLeft, HomeRight } from './style'
+import React, { PureComponent } from 'react'
+import { HomeWrapper, HomeLeft, HomeRight, BackTop } from './style'
 import Topic from './components/Topic'
 import List from './components/List'
 import Recommond from './components/Recommond'
 import Writer from './components/Writer'
+import { connect } from 'react-redux'
+import { actionCreators } from './store'
 
-class Home extends Component {
+class Home extends PureComponent {
+    handleScrollTop() {
+        window.scrollTo(0, 0)
+    }
     render () {
         return (
             <HomeWrapper>
@@ -18,9 +23,40 @@ class Home extends Component {
                     <Recommond />
                     <Writer />
                 </HomeRight>
+                { this.props.showScroll === true ? <BackTop onClick={this.handleScrollTop}>顶部</BackTop>: null}
             </HomeWrapper>
         )
     }
+
+    componentDidMount () {
+        this.props.changeHomeData()
+        this.bindEvent()
+    }
+
+    componentWillUnmount () {
+        window.removeEventListener('scroll', this.props.changeScrollTopShow)
+    }
+
+    bindEvent () {
+        window.addEventListener('scroll', this.props.changeScrollTopShow)
+    }
 }
 
-export default Home
+const mapState = (state) => ({
+    showScroll: state.getIn(['home', 'showScroll'])
+})
+
+const mapDispatch = (dispatch) => ({
+    changeHomeData () {
+        dispatch(actionCreators.getHomeInfo())
+    },
+    changeScrollTopShow () {
+        if (document.documentElement.scrollTop) {
+            dispatch(actionCreators.toggleTopShow(true))
+        } else {
+            dispatch(actionCreators.toggleTopShow(false))
+        }
+    }
+})
+
+export default connect(mapState, mapDispatch)(Home)
